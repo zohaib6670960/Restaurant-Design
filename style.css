@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Heading Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5) url('../images/restaurant.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+}
+#navbar{
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin: 40px auto;
+    padding: 20px 0;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.7);
+}
+#navbar #logo{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar #links ul{
+    display: flex;
+    list-style: none;
+}
+#navbar #links ul li a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    position: relative;
+}
+#links ul li a::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 2px;
+    left: 20px;
+    width: 0;
+    bottom: 15px;
+    transition: .3s;
+}
+#links ul li a:hover::after{
+    width: 70%;
+}
+#navbar #btn button{
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: yellow;
+    font-size: 17;
+    cursor: pointer;
+
+}
+/* font-family: 'Lobster', cursive; */
+
+/* First we need to animate our Navigation bar. let's start  */
+
+#home{
+    width: 100%;
+    height: 100%;
+    padding: 5rem 2rem;
+}
+#home-text{
+    line-height: 40px;
+    text-align: center;
+}
+#home-text h1{
+    font-family: 'Lobster', cursive;
+    color: yellow;
+    font-size: 50px;
+}
+#home-text h3{
+    margin-top: 20px;
+    font-family: poppins;
+}
+#home-text button{
+    padding: 10px 25px;
+    border-radius: 15px;
+    border:none;
+    background: yellow;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#delicious{
+    text-align: center;
+    background-color: white;
+    height: 100%;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 1rem;
+    margin: 0 auto;
+}
+#delicious #delicious-text h1{
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-size: 33px;
+}
+#delicious .delicious-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#delicious .delicious-box .box{
+    background-color: rgb(2, 40, 75);
+    width: 150px;
+    height: auto;    
+    border-radius: 10px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.box h3{
+    color: white;
+    font-family: sans-serif;
+    border-bottom: 4px solid yellow;
+    margin-bottom: 20px;
+}
+.box img{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+.box button{
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    margin-top: 6px;
+    background-color: yellow;
+}
+
+/* Thanks for Watching . this.  */
